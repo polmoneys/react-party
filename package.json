@@ -1,0 +1,43 @@
+{
+    "name": "party-react",
+    "version": "0.5.0",
+    "description": "React component to join elements with SVG",
+    "main": "build/index.js",
+    "module": "build/index.es.js",
+    "files": [
+        "build"
+    ],
+    "scripts": {
+        "build": "rollup -c",
+        "chores": "npm run pretty && npm run build",
+        "pretty": "prettier --write \"**/*.+(js|ts|tsx|json|css|sass|scss|md|mdx|html)\"",
+        "npmpublish": "npm publish"
+    },
+    "keywords": [
+        "react",
+        "svg"
+    ],
+    "author": "pol moneys",
+    "license": "ISC",
+    "devDependencies": {
+        "@rollup/plugin-commonjs": "^17.1.0",
+        "@rollup/plugin-node-resolve": "^11.2.0",
+        "@types/react": "^17.0.3",
+        "node-sass": "^5.0.0",
+        "postcss": "^8.2.10",
+        "prettier": "^2.2.1",
+        "rollup": "^2.45.2",
+        "rollup-plugin-peer-deps-external": "^2.2.4",
+        "rollup-plugin-postcss": "^4.0.0",
+        "rollup-plugin-typescript2": "^0.30.0",
+        "typescript": "^4.2.3"
+    },
+    "peerDependencies": {
+        "react": ">=16.8.0",
+        "react-dom": ">=16.8.0"
+    },
+    "dependencies": {
+        "@reach/rect": "^0.15.0",
+        "d3-shape": "^2.1.0"
+    }
+}
