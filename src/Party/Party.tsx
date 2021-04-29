@@ -37,6 +37,7 @@ const Party = (props: PartyProps) => {
         >
             {pathValues && (
                 <path
+                    vectorEffect="non-scaling-stroke"
                     fill="none"
                     stroke={fill}
                     strokeWidth={weigth}

@@ -7,4 +7,3 @@ Joins elments (it's refs) with svg lines or curves. Self aware, redraw on resize
 [Demo](https://codesandbox.io/s/party-ofbq2)
 
 🦚
-

@@ -96,7 +96,7 @@ var Party = function (props) {
     }, [boundary, draw]);
     return (React.createElement("svg", { className: "party-svg", style: {
             transform: transforms ? transforms : undefined,
-        } }, pathValues && (React.createElement("path", { fill: "none", stroke: fill, strokeWidth: weigth, strokeLinecap: round ? 'round' : 'square', strokeLinejoin: round ? 'round' : 'miter', d: pathValues }))));
+        } }, pathValues && (React.createElement("path", { vectorEffect: "non-scaling-stroke", fill: "none", stroke: fill, strokeWidth: weigth, strokeLinecap: round ? 'round' : 'square', strokeLinejoin: round ? 'round' : 'miter', d: pathValues }))));
 };
 
 export { Party };
